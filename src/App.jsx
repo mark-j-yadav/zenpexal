@@ -537,35 +537,7 @@ function About() {
         </div>
       </div>
     </section>
-    <section className="section about-section" id="about1">
-      <div className="about-photo" data-reveal>
-       <img src={ceoImg} alt="Muskan Khan, CFO Zenpexal Digital Agency" />
-        <div className="founder-badge">
-          <Crown size={18} />
-          CEO / Founder
-        </div>
-      </div>
-
-      <div className="about-copy" data-reveal>
-        <p className="eyebrow">
-          <Crown size={16} />
-          Meet the CEO
-        </p>
-        <h2>Mark J Yadav leads Zenpexal Digital Agency.</h2>
-        <p>
-          I am Muskan Khan, CFO of Zenpexal Digital Agency. I started Zenpexal to help brands look more premium online and convert more visitors into serious leads, customers, and long-term growth.
-        </p>
-        <div className="founder-quote">
-          <Quote size={22} />
-          <strong>My focus is simple: build digital experiences that make a client trust your business before they even speak to you.</strong>
-        </div>
-        <div className="about-points">
-          <span><Check size={16} /> Strategy-first websites</span>
-          <span><Check size={16} /> Clean modern development</span>
-          <span><Check size={16} /> Conversion-focused marketing</span>
-        </div>
-      </div>
-    </section>
+   
   );
 }
 
