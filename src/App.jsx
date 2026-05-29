@@ -508,7 +508,7 @@ function About() {
   return (
     <section className="section about-section" id="about">
       <div className="about-photo" data-reveal>
-        <img src="../assets/mark-j-yadav-ceo.png" alt="Mark J Yadav, CEO of Zenpexal Digital Agency" />
+       <img src="../assets/mark-j-yadav-ceo.png" alt="Mark J Yadav, CEO of Zenpexal Digital Agency" />
         <div className="founder-badge">
           <Crown size={18} />
           CEO / Founder
