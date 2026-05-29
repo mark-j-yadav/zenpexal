@@ -183,7 +183,7 @@ function Hero() {
   return (
     <section className="hero" id="top">
       <div className="hero-media" aria-hidden="true">
-        <img src="./assets/zenpexal-hero.png" alt="" />
+        <img src="../assets/zenpexal-hero.png" alt="" />
       </div>
       <div className="hero-shade" aria-hidden="true" />
       <div className="hero-inner">
@@ -508,7 +508,7 @@ function About() {
   return (
     <section className="section about-section" id="about">
       <div className="about-photo" data-reveal>
-        <img src="/assets/mark-j-yadav-ceo.png" alt="Mark J Yadav, CEO of Zenpexal Digital Agency" />
+        <img src="../assets/mark-j-yadav-ceo.png" alt="Mark J Yadav, CEO of Zenpexal Digital Agency" />
         <div className="founder-badge">
           <Crown size={18} />
           CEO / Founder
