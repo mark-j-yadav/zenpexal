@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
+import ceoImg from "../assets/mark-j-yadav-ceo.png";
 import {
   ArrowLeft,
   ArrowUpRight,
@@ -508,7 +509,7 @@ function About() {
   return (
     <section className="section about-section" id="about">
       <div className="about-photo" data-reveal>
-       <img src="../assets/mark-j-yadav-ceo.png" alt="Mark J Yadav, CEO of Zenpexal Digital Agency" />
+       <img src={ceoImg} alt="Mark J Yadav, CEO of Zenpexal Digital Agency" />
         <div className="founder-badge">
           <Crown size={18} />
           CEO / Founder
