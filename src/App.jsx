@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
-import ceoImg from "../assets/mark-j-yadav-ceo.png";
+import ceoImg from "../assets/mark-j-yadav-ceo.png
+";
 import {
   ArrowLeft,
   ArrowUpRight,
