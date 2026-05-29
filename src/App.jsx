@@ -183,7 +183,7 @@ function Hero() {
   return (
     <section className="hero" id="top">
       <div className="hero-media" aria-hidden="true">
-        <img src="/assets/zenpexal-hero.png" alt="" />
+        <img src="./assets/zenpexal-hero.png" alt="" />
       </div>
       <div className="hero-shade" aria-hidden="true" />
       <div className="hero-inner">
