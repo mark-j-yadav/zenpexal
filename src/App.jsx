@@ -1,6 +1,4 @@
 import React, { useEffect, useMemo, useState } from "react";
-import ceoImg from "../assets/mark-j-yadav-ceo.png
-";
 import {
   ArrowLeft,
   ArrowUpRight,
@@ -162,8 +160,8 @@ function Header() {
   return (
     <header className="site-header">
       <a className="brand" href="#top" aria-label="Zenpexal home">
-        <span className="brand-mark">Z</span>
-        <span>Zenpexal</span>
+        <span className="brand-mark">Z.</span>
+        <span>Zenpexal<span className="brand-dot">.</span></span>
       </a>
       <nav className="nav-links" aria-label="Primary navigation">
         <a href="#services">Services</a>
@@ -184,53 +182,46 @@ function Header() {
 function Hero() {
   return (
     <section className="hero" id="top">
-      <div className="hero-media" aria-hidden="true">
-        <img src="../assets/zenpexal-hero.png" alt="" />
-      </div>
-      <div className="hero-shade" aria-hidden="true" />
       <div className="hero-inner">
         <div className="hero-copy" data-reveal>
           <p className="eyebrow">
             <Sparkles size={16} />
-            Digital presence built to convert
+            Premium digital agency
           </p>
-          <h1>Zenpexal builds brand gravity on the web.</h1>
+          <h1>We build digital brands that <span>stand out.</span></h1>
+          <p className="hero-role">Web Development <i>/</i> Ecommerce <i>/</i> Marketing</p>
           <p className="lead">
-            Premium websites, Shopify stores, full-stack apps, and marketing funnels crafted for clients who need trust, speed, and sales from the first click.
+            Zenpexal creates high-converting WordPress, Shopify, MERN, and Next.js experiences backed by performance marketing and conversion strategy.
           </p>
           <div className="hero-actions">
             <a className="btn btn-primary" href="#contact">
-              Start a Project
+              Hire Zenpexal
               <ArrowUpRight size={19} />
             </a>
             <a className="btn btn-secondary" href="#services">
-              View Services
+              Explore Services
               <ChevronRight size={19} />
             </a>
           </div>
+          <div className="hero-trust">
+            <span><strong>05</strong> Core services</span>
+            <span><strong>100%</strong> Custom strategy</span>
+            <span><strong>Global</strong> Delivery</span>
+          </div>
         </div>
 
-        <div className="hero-console" data-reveal>
-          <div className="console-top">
-            <span />
-            <span />
-            <span />
-            <strong>Growth OS</strong>
+        <div className="hero-portrait" data-reveal>
+          <div className="portrait-frame">
+            <img src={`${import.meta.env.BASE_URL}assets/mark-j-yadav-ceo.png`} alt="Mark J Yadav, CEO of Zenpexal Digital Agency" />
+            <div className="portrait-lines" aria-hidden="true"><i /><i /><i /></div>
+            <div className="portrait-label">
+              <span>Founder / CEO</span>
+              <strong>Mark J Yadav</strong>
+            </div>
           </div>
-          <div className="console-metric">
-            <span>Conversion Pulse</span>
-            <strong>97%</strong>
-          </div>
-          <div className="signal-bars" aria-hidden="true">
-            {Array.from({ length: 18 }).map((_, index) => (
-              <i key={index} style={{ "--bar": `${18 + ((index * 17) % 62)}%` }} />
-            ))}
-          </div>
-          <div className="console-grid">
-            <span><Target size={15} /> Offer</span>
-            <span><Gauge size={15} /> Speed</span>
-            <span><Search size={15} /> SEO</span>
-            <span><BarChart3 size={15} /> Ads</span>
+          <div className="portrait-status">
+            <span className="status-pulse" />
+            Available for new projects
           </div>
         </div>
       </div>
@@ -510,7 +501,7 @@ function About() {
   return (
     <section className="section about-section" id="about">
       <div className="about-photo" data-reveal>
-       <img src={ceoImg} alt="Mark J Yadav, CEO of Zenpexal Digital Agency" />
+        <img src={`${import.meta.env.BASE_URL}assets/mark-j-yadav-ceo.png`} alt="Mark J Yadav, CEO of Zenpexal Digital Agency" />
         <div className="founder-badge">
           <Crown size={18} />
           CEO / Founder
